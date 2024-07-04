@@ -1,0 +1,13 @@
+[alias]
+	st = status
+	cm = commit -m
+	ch = checkout
+	chb = checkout -b
+	b = branch
+	amend = commit --amend --no-edit
+	pick = cherry-pick
+[user]
+	email = amjadyahia.dev@gmail.com
+	name = Amjad Yahia
+[init]
+	defaultBranch = main
