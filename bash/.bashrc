@@ -198,17 +198,7 @@ esac
 
 
 # Aliases
-alias dco='docker compose'
-alias dsk='ncdu'
-alias copy='xclip -sel clip'
-alias i='sudo apt install'
-alias pn='pnpm'
-alias up='sudo apt update -y && sudo apt upgrade -y; sudo apt-get update -y && sudo apt-get upgrade -y; sudo snap refresh'
-alias rmr='rm -r'
-alias rmrf='rmr -f'
-alias bashrc='nvim ~/.bashrc'
-alias diff='difftastic'
-alias open='xdg-open'
+
 
 # Fig post block. Keep at the bottom of this file.
 [[ -f "$HOME/.fig/shell/bashrc.post.bash" ]] && builtin source "$HOME/.fig/shell/bashrc.post.bash"
@@ -219,3 +209,17 @@ export PATH=$BUN_INSTALL/bin:$PATH
 
 #neovim
 export PATH="$PATH:/opt/nvim-linux64/bin"
+
+#setup toggle language keybind 
+setxkbmap -option grp:alt_shift_toggle
+setxkbmap -layout us,ar
+
+
+. "$HOME/.atuin/bin/env"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+eval "$(atuin init bash)"
+
+
+source ~/.bash-aliases
+

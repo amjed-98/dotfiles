@@ -1,0 +1,16 @@
+alias dco='docker compose'
+alias dsk='ncdu'
+alias copy='xclip -sel clip'
+alias i='sudo apt install'
+alias pn='pnpm'
+alias up='sudo apt update -y && sudo apt upgrade -y; sudo apt-get update -y && sudo apt-get upgrade -y; sudo snap refresh'
+alias rmr='rm -r'
+alias rmrf='rmr -f'
+alias bashrc='nv ~/.bashrc'
+alias diff='difftastic'
+alias open='xdg-open'
+alias bright='sudo brightnessctl set'
+alias nv='nvim'
+alias shut='shutdown -h now'
+alias md=mkdir
+
