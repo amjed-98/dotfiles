@@ -73,7 +73,7 @@ bindsym $mod+Shift+q kill
 # start rofi (a program launcher)
 bindsym $mod+d exec --no-startup-id rofi -show drun
 bindsym $mod+space exec --no-startup-id rofi -show combi
-bindsym $mod+Tab exec --no-startup-id rofi -show window
+bindsym $mod+Tab exec --no-startup-id bash ~/dotfiles/rofi/.config/rofi-wifi-menu.sh 
 
 # change focus
 bindsym $mod+h focus left

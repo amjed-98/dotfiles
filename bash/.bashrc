@@ -223,3 +223,5 @@ eval "$(atuin init bash)"
 
 source ~/.bash-aliases
 
+
+[ -f ~/.fzf.bash ] && source ~/.fzf.bash
