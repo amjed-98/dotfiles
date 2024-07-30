@@ -14,5 +14,7 @@ alias nv='nvim'
 alias shut='shutdown -h now'
 alias md=mkdir
 alias fnv='nv $(fzf --preview="bat --style numbers,changes --color=always {} | head -500")'
-alias al="echo 'alias $1' >> ~/.bash-aliases"
+alias al="echo 'alias$1' >> ~/.bash-aliases"
 alias bash-alias="nv ~/.bash-aliases"
+alias fd='fdfind'
+alias mail='mailspring --password-store=gnome-libsecret'
