@@ -3,7 +3,7 @@ return {
   cmd = "Neotree",
   keys = {
     {
-      "<leader>fe",
+      "<C-e>",
       function()
         require("neo-tree.command").execute({ toggle = true, dir = LazyVim.root(), position = "right" })
       end,

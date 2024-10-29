@@ -3,7 +3,7 @@ alias dsk='ncdu'
 alias copy='xclip -sel clip'
 alias i='sudo apt install'
 alias pn='pnpm'
-alias up='sudo apt update -y && sudo apt upgrade -y; sudo apt-get update -y && sudo apt-get upgrade -y; sudo snap refresh'
+alias up='sudo apt update -y && sudo apt upgrade -y; sudo snap refresh'
 alias rmr='rm -r'
 alias rmrf='rmr -f'
 alias bashrc='nv ~/.bashrc'
@@ -18,3 +18,4 @@ alias al="echo 'alias$1' >> ~/.bash-aliases"
 alias bash-alias="nv ~/.bash-aliases"
 alias fd='fdfind'
 alias mail='mailspring --password-store=gnome-libsecret'
+alias lg='lazygit'
