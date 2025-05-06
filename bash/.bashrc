@@ -25,4 +25,17 @@ source "$HOME/.yazi"
 
 eval "$(starship init bash)"
 eval "$(zoxide init bash)"
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH=$BUN_INSTALL/bin:$PATH
+
+[[ -f ~/.bash-preexec.sh ]] && source ~/.bash-preexec.sh
 eval "$(atuin init bash)"
+
+# Created by `pipx` on 2025-01-21 19:58:07
+export PATH="$PATH:/home/amjad/.local/bin"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

@@ -1,13 +1,14 @@
 alias dco='docker compose'
 alias dsk='ncdu'
 alias copy='xclip -sel clip'
-alias i='sudo apt install'
+alias i='yay -S --noconfirm'
+alias un='yay -Rs'
 alias pn='pnpm'
-alias up='sudo apt update -y && sudo apt upgrade -y; sudo snap refresh'
+alias up='yay -Syu --noconfirm'
 alias rmr='rm -r'
 alias rmrf='rmr -f'
 alias bashrc='nv ~/.bashrc'
-alias diff='difftastic'
+alias diff='difft'
 alias open='xdg-open'
 alias bright='sudo brightnessctl set'
 alias nv='nvim'
@@ -16,10 +17,14 @@ alias md=mkdir
 alias fnv='nv $(fzf --preview="bat --style numbers,changes --color=always {} | head -500")'
 alias al="echo 'alias$1' >> ~/.bash-aliases"
 alias bash-alias="nv ~/.bash-aliases"
-alias fd='fdfind'
 alias mail='mailspring --password-store=gnome-libsecret'
 alias lg='lazygit'
+alias ld='lazydocker'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias la='ls -a'
+alias ll='ls -al'
+alias l='ls -CF'
+alias pnpx='pnpm dlx'
 
 if [ -x /usr/bin/dircolors ]; then
   test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -29,3 +34,6 @@ if [ -x /usr/bin/dircolors ]; then
 
   alias grep='grep --color=auto'
 fi
+
+alias tasks="nv /home/amjad/Desktop/temp/tasks.txt"
+alias pr='gh-dash'
